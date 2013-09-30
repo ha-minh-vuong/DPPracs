@@ -21,6 +21,10 @@
 		49D7611717F9C109000A9A0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D760F917F9C108000A9A0E /* UIKit.framework */; };
 		49D7611F17F9C109000A9A0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49D7611D17F9C109000A9A0E /* InfoPlist.strings */; };
 		49D7612117F9C109000A9A0E /* DPPracsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7612017F9C109000A9A0E /* DPPracsTests.m */; };
+		49D7612C17F9C398000A9A0E /* MapSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7612B17F9C398000A9A0E /* MapSite.m */; };
+		49D7612F17F9C4D9000A9A0E /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7612E17F9C4D9000A9A0E /* Room.m */; };
+		49D7613217F9C7E1000A9A0E /* Wall.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7613117F9C7E1000A9A0E /* Wall.m */; };
+		49D7613517F9C7FB000A9A0E /* Door.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D7613417F9C7FB000A9A0E /* Door.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		49D7611C17F9C109000A9A0E /* DPPracsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DPPracsTests-Info.plist"; sourceTree = "<group>"; };
 		49D7611E17F9C109000A9A0E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49D7612017F9C109000A9A0E /* DPPracsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPracsTests.m; sourceTree = "<group>"; };
+		49D7612A17F9C398000A9A0E /* MapSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapSite.h; sourceTree = "<group>"; };
+		49D7612B17F9C398000A9A0E /* MapSite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapSite.m; sourceTree = "<group>"; };
+		49D7612D17F9C4D9000A9A0E /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
+		49D7612E17F9C4D9000A9A0E /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		49D7613017F9C7E1000A9A0E /* Wall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wall.h; sourceTree = "<group>"; };
+		49D7613117F9C7E1000A9A0E /* Wall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wall.m; sourceTree = "<group>"; };
+		49D7613317F9C7FB000A9A0E /* Door.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Door.h; sourceTree = "<group>"; };
+		49D7613417F9C7FB000A9A0E /* Door.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Door.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,7 @@
 				49D7610A17F9C109000A9A0E /* ViewController.h */,
 				49D7610B17F9C109000A9A0E /* ViewController.m */,
 				49D7610D17F9C109000A9A0E /* Images.xcassets */,
+				49D7613617F9CCF8000A9A0E /* Maze */,
 				49D760FC17F9C109000A9A0E /* Supporting Files */,
 			);
 			path = DPPracs;
@@ -150,6 +163,21 @@
 				49D7611D17F9C109000A9A0E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49D7613617F9CCF8000A9A0E /* Maze */ = {
+			isa = PBXGroup;
+			children = (
+				49D7612A17F9C398000A9A0E /* MapSite.h */,
+				49D7612B17F9C398000A9A0E /* MapSite.m */,
+				49D7612D17F9C4D9000A9A0E /* Room.h */,
+				49D7612E17F9C4D9000A9A0E /* Room.m */,
+				49D7613017F9C7E1000A9A0E /* Wall.h */,
+				49D7613117F9C7E1000A9A0E /* Wall.m */,
+				49D7613317F9C7FB000A9A0E /* Door.h */,
+				49D7613417F9C7FB000A9A0E /* Door.m */,
+			);
+			name = Maze;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D7612F17F9C4D9000A9A0E /* Room.m in Sources */,
 				49D7610C17F9C109000A9A0E /* ViewController.m in Sources */,
 				49D7610617F9C109000A9A0E /* AppDelegate.m in Sources */,
+				49D7613517F9C7FB000A9A0E /* Door.m in Sources */,
 				49D7610217F9C109000A9A0E /* main.m in Sources */,
+				49D7612C17F9C398000A9A0E /* MapSite.m in Sources */,
+				49D7613217F9C7E1000A9A0E /* Wall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
